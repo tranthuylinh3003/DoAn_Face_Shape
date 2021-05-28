@@ -5,6 +5,7 @@
 >
 > ### 2.[shape\_predictor\_68\_face\_landmarks.dat](http://dlib.net/files/shape_predictor_68_face_landmarks.dat.bz2)
 >
+---
 
 ## Cách chạy trên Colab:
 - Vì dữ liệu đã được train sẵn rồi nên không cần train lại nữa
@@ -59,6 +60,7 @@
 
 #### Code Colab: [Code tham khảo](https://github.com/tranthuylinh3003/DoAn_Face_Shape/blob/main/Run_App.ipynb)
 
+---
 
 ## Tham khảo: [MiAI\_Face\_Shape](https://github.com/thangnch/MiAI_Face_Shape)
 
