@@ -1,4 +1,4 @@
-# DoAn_Face_Shape
+# Đồ Án: Xem bói bằng AI
 
 ## 1. Link data:
 > ### 1.1.[Face\_Shape\_Data](./Data/face_shape_data.zip)
