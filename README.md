@@ -1,16 +1,16 @@
 # DoAn_Face_Shape
 
-## Link data:
-> ### 1.[Face\_Shape\_Data](./Data/face_shape_data.zip)
+## 1. Link data:
+> ### 1.1.[Face\_Shape\_Data](./Data/face_shape_data.zip)
 >
-> ### 2.[shape\_predictor\_68\_face\_landmarks.dat](http://dlib.net/files/shape_predictor_68_face_landmarks.dat.bz2)
+> ### 1.2.[shape\_predictor\_68\_face\_landmarks.dat](http://dlib.net/files/shape_predictor_68_face_landmarks.dat.bz2)
 >
 ---
 
-## Cách chạy trên Colab:
+## 2. Cách chạy trên Colab:
 - Vì dữ liệu đã được train sẵn rồi nên không cần train lại nữa
 
-### 1. Tạo 1 file Colab:
+### 2.1. Tạo 1 file Colab:
 ![Tao_File](Picture/Tao_Colab.png)
 
 #### - Nếu muốn chạy nhanh hơn thì vào 
@@ -20,25 +20,25 @@
 ![Chon_Runtype](Picture/Chon_Runtype.png)
 
 
-### 2. Lấy code từ github:
+### 2.2. Lấy code từ github:
 ```
 !gitclone https://github.com/tranthuylinh3003/DoAn_Face_Shape.git
 ```
 ![gitclone](Picture/Lay_Code.png)
 
-### 3. Đi đến thư mục chứa code:
+### 2.3. Đi đến thư mục chứa code:
 ```
 %cd './DoAn_Face_Shape'
 ```
 ![cd_path](Picture/cd_ThuMuc.png)
 
-### 4. Cài đặt các thư viện cần thiết:
+### 2.44. Cài đặt các thư viện cần thiết:
 ```
 !chmod u+x setup.sh && ./setup.sh
 ```
 ![setup](Picture/setup.png)
 
-### 5. Run Code:
+### 2.5. Run Code:
 ```
 !python3 svr_model.py
 ```
@@ -62,7 +62,7 @@
 
 ---
 
-## Tham khảo: [MiAI\_Face\_Shape](https://github.com/thangnch/MiAI_Face_Shape)
+## 3. Tham khảo: [MiAI\_Face\_Shape](https://github.com/thangnch/MiAI_Face_Shape)
 
 
 
