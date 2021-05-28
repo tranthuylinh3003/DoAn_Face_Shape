@@ -8,7 +8,7 @@
 ---
 
 ## 2. Cách chạy trên Colab:
-- Vì dữ liệu đã được train sẵn rồi nên không cần train lại nữa
+**_NOTE:_** Vì dữ liệu đã được train sẵn rồi nên không cần train lại nữa.
 
 ### 2.1. Tạo 1 file Colab:
 ![Tao_File](Picture/Tao_Colab.png)
