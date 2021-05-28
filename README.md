@@ -7,6 +7,7 @@
 >
 
 ## Cách chạy trên Colab:
+- Vì dữ liệu đã được train sẵn rồi nên không cần train lại nữa
 
 ### 1. Tạo 1 file Colab:
 
