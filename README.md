@@ -10,6 +10,14 @@
 - Vì dữ liệu đã được train sẵn rồi nên không cần train lại nữa
 
 ### 1. Tạo 1 file Colab:
+![Tao_File](Picture/Tao_Colab.png)
+
+#### - Nếu muốn chạy nhanh hơn thì vào 
+> **Runtime -> Change Runtime type -> GPU**
+
+
+![Chon_Runtype](Picture/Chon_Runtype.png)
+
 
 ### 2. Lấy code từ github:
 ```
@@ -23,7 +31,7 @@
 
 ### 4. Cài đặt các thư viện cần thiết:
 ```
-!pip install -r requirements.txt
+!chmod u+x setup.sh && ./setup.sh
 ```
 
 ### 5. Run Code:
