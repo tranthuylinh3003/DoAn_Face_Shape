@@ -1,9 +1,9 @@
 # Đồ Án: Xem bói bằng AI
 
 ## 1. Link data:
-> ### 1.1.[Face\_Shape\_Data](./Data/face_shape_data.zip)
+> ### 1.1 [Face\_Shape\_Data](./Data/face_shape_data.zip)
 >
-> ### 1.2.[shape\_predictor\_68\_face\_landmarks.dat](http://dlib.net/files/shape_predictor_68_face_landmarks.dat.bz2)
+> ### 1.2 [shape\_predictor\_68\_face\_landmarks.dat](http://dlib.net/files/shape_predictor_68_face_landmarks.dat.bz2)
 >
 ---
 
