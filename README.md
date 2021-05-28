@@ -23,29 +23,41 @@
 ```
 !gitclone https://github.com/tranthuylinh3003/DoAn_Face_Shape.git
 ```
+![gitclone](Picture/Lay_Code.png)
 
 ### 3. Đi đến thư mục chứa code:
 ```
 %cd './DoAn_Face_Shape'
 ```
+![cd_path](Picture/cd_ThuMuc.png)
 
 ### 4. Cài đặt các thư viện cần thiết:
 ```
 !chmod u+x setup.sh && ./setup.sh
 ```
+![setup](Picture/setup.png)
 
 ### 5. Run Code:
 ```
 !python3 svr_model.py
 ```
+![run](Picture/Run_Code.png)
 
-- Trong khi run sẽ xuất hiện:
+
+#### - Trong khi run sẽ xuất hiện:
 
 > **Running on http://xxxxxxx.ngrok.io**
 
-- Nhấp vào link để vào trang web.
+#### - Nhấp vào link để vào trang web.
 
-> **Ngưng chạy thì bấm tổ hợp phím 'Ctrl + M + I'**
+![link](Picture/Link.png)
+
+
+
+
+#### **Ngưng chạy thì bấm tổ hợp phím 'Ctrl + M + I'**
+
+#### Code Colab: [Code tham khảo](https://github.com/tranthuylinh3003/DoAn_Face_Shape/blob/main/Run_App.ipynb)
 
 
 ## Tham khảo: [MiAI\_Face\_Shape](https://github.com/thangnch/MiAI_Face_Shape)
