@@ -1,3 +1,0 @@
-mtcnn
-dlib
-flask-ngrok

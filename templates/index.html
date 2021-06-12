@@ -35,10 +35,12 @@
             text-align: center;
             padding: 30px;
         }
-        .footer
-        {
-
-        }
+        footer {
+            clear: both;
+            position: relative;
+            height: 200px;
+            margin-top: -200px;
+          }
 
         .info
         {
@@ -146,9 +148,13 @@
         {% endif %}
     </div>
 </div>
-<div class='footer'>
 
-</div>
+
+<footer id="share">
+    <a class="share-f" href="https://www.facebook.com/sharer/sharer.php?u=<?php the_permalink(); ?>" target="_blank"><img alt="Facebook" src="<?php echo get_template_directory_uri() ?>/static/facebook.png" title="Facebook" width="44" /></a>
+    <a class="share-t" href="https://twitter.com/intent/tweet?url=<?php the_permalink(); ?>" target="_blank"><img alt='Twitter' src='<?php echo get_template_directory_uri() ?>/static/twitter.png' title='Twitter' width='44'/></a>
+    <a class="share-p" href="https://www.pinterest.com/pin/create/link/?url=<?php the_permalink(); ?>&media=<?php echo the_post_thumbnail_url('large'); ?>&description=<?php echo get_the_title(get_the_ID()); ?>" target="_blank"><img alt='Pinterest' src='<?php echo get_template_directory_uri() ?>/static/printerest.png' title='Pinterest' width='44'/></a>
+</footer>
 
 </body>
 <script>
