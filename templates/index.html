@@ -25,21 +25,16 @@
                 overflow-x: scroll;
             }
 
-        .header {
-            background-color: rgba(0, 0, 0, 0.3);
-            font-weight: bold;
-            text-transform: uppercase;
-            font-size: large;
-            color:white;
-
-            text-align: center;
-            padding: 30px;
-        }
         footer {
-            clear: both;
-            position: relative;
-            height: 200px;
-            margin-top: -200px;
+            display: block;
+            padding: 10px 15px;
+            border:none;
+            position: absolute;
+            top: 120px;
+            right: 30px;
+            text-decoration: none;
+            font-size: 18px;
+            color: #FFF;
           }
 
         .info
@@ -68,18 +63,29 @@
             color: black;
             padding: 15px;
             font-size: 16px;
+            position: absolute;
+            top: 120px;
+            right: 530px;
             border: 0px;
             border-radius: 5px;
-            -webkit-box-shadow: 6px 8px 18px -5px rgba(0, 0, 0, 0.38);
-            -moz-box-shadow: 6px 8px 18px -5px rgba(0, 0, 0, 0.38);
-            box-shadow: 6px 8px 18px -5px rgba(0, 0, 0, 0.38);
             cursor: pointer;
         }
 
         .upload_hint {
             margin: 10px;
             font-size: 14px;
-            color: rgb(200, 200, 200);
+            position: relative;
+            top: 132px;
+            right: -70px;
+            color: white;
+        }
+        .share_hint {
+            margin: 10px;
+            font-size: 14px;
+            position: relative;
+            top: 115px;
+            left: 650px;
+            color: white;
         }
 
         .result_part {
@@ -90,13 +96,19 @@
         .result_title {
             font-size: 18px;
             font-weight: bold;
+            position: relative;
+            top: 45px;
+            right: -70px;
         }
 
         .result_id {
             padding: 10px;
-            margin: 15px;
+            margin: 2px;
             font-size: 16px;
-
+            width: 1200px;
+            position: relative;
+            top: -140px;
+            right: -180px;
         }
 
         .result_id_number {
@@ -116,9 +128,6 @@
 </head>
 
 <body>
-<div class='header'>
-    NHÓM THẦY BÓI NOWHERE XEM BÓI MIỄN PHÍ ĐẦU NĂM
-</div>
 <div class='content'>
 
     <div class='upload_part'>
@@ -126,6 +135,9 @@
         <div class='upload_hint' id='upload_hint'>
                 Các định dạng được hỗ trợ: PNG, JPG và JPEG.
         </div>
+        <div class='share_hint' id='share_hint'>
+            Chia sẻ
+        </div> 
         <form action="/" method="POST" enctype="multipart/form-data" id='form'>
             <input type="file" name="file" id="fileinput" style="display: none;" accept="image/*">
         </form>
@@ -139,7 +151,7 @@
         <div class='result_id'>Bạn có khuôn mặt: <span class='result_id_number'>{{ face_shape }}</span></div>
         {% endif %}
         {% if user_image %}
-        <img style="max-width:160px; border-radius:1rem" src="{{ url_for('static', filename=user_image) }}?{{ rand }}"
+        <img style="max-width:160px; border-radius:1rem; position: relative; top:40px; left: -650px" src="{{ url_for('static', filename=user_image) }}?{{ rand }}"
              alt="User Image">
         {% endif %}
         {% if extra %}
@@ -151,9 +163,9 @@
 
 
 <footer id="share">
-    <a class="share-f" href="https://www.facebook.com/sharer/sharer.php?u=<?php the_permalink(); ?>" target="_blank"><img alt="Facebook" src="<?php echo get_template_directory_uri() ?>/static/facebook.png" title="Facebook" width="44" /></a>
-    <a class="share-t" href="https://twitter.com/intent/tweet?url=<?php the_permalink(); ?>" target="_blank"><img alt='Twitter' src='<?php echo get_template_directory_uri() ?>/static/twitter.png' title='Twitter' width='44'/></a>
-    <a class="share-p" href="https://www.pinterest.com/pin/create/link/?url=<?php the_permalink(); ?>&media=<?php echo the_post_thumbnail_url('large'); ?>&description=<?php echo get_the_title(get_the_ID()); ?>" target="_blank"><img alt='Pinterest' src='<?php echo get_template_directory_uri() ?>/static/printerest.png' title='Pinterest' width='44'/></a>
+    <a class="share-f" href="https://www.facebook.com/sharer/sharer.php?u=https://xemtuvi.mobi/xem-tuong-so-nhan-tuong-hoc/xem-tuong-mat" target="_blank"><img alt="Facebook" src="/static/facebook.png" title="Facebook" width="44" /></a>
+    <a class="share-t" href="https://twitter.com/intent/tweet?url=https://xemtuvi.mobi/xem-tuong-so-nhan-tuong-hoc/xem-tuong-mat" target="_blank"><img alt='Twitter' src='/static/twitter.png' title='Twitter' width='44'/></a>
+    <a class="share-p" href="https://www.pinterest.com/pin/create/link/?url=https://xemtuvi.mobi/xem-tuong-so-nhan-tuong-hoc/xem-tuong-mat&media=<?php echo the_post_thumbnail_url('large'); ?>&description=<?php echo get_the_title(get_the_ID()); ?>" target="_blank"><img alt='Pinterest' src='/static/pinterest.png' title='Pinterest' width='44'/></a>
 </footer>
 
 </body>
