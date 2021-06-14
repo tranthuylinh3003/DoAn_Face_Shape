@@ -78,7 +78,7 @@ def home_page():
 
                     # Trả về kết quả
                     return render_template("index.html", user_image = image.filename , rand = str(random()),
-                                           msg="Tải file lên thành công", idBoolean = True, ID=ID, extra=extra)
+                                           msg=" ", idBoolean = True, ID=ID, extra=extra)
                 else:
                     return render_template('index.html', msg='Không nhận diện được khuôn mặt')
             else:
