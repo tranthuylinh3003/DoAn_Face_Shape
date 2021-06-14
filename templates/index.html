@@ -22,7 +22,6 @@
                 background-repeat: no-repeat;
                 background-size: cover;
                 height: 100%;
-                overflow-x: scroll;
             }
 
         footer {
@@ -30,42 +29,36 @@
             padding: 10px 15px;
             border:none;
             position: absolute;
-            top: 120px;
+            top: 172px;
             right: 30px;
             text-decoration: none;
-            font-size: 18px;
+            font-size: 24px;
             color: #FFF;
           }
-
-        .info
-        {
-            text-align:left;
-            color:gray;
-            width:30%;
-            margin:auto;
-            padding:20px;
-            font-size:14px;
-        }
 
 
         .content {
             width: 100%;
         }
 
-        .upload_part {
-            background-color: rgba(0, 0, 0, 0.3);
-            text-align: center;
-            padding: 40px;
+        .info
+        {
+           text-align: center;
+           color: gray;
+           width:30%;
+           margin:auto;
+           padding: 20px;
+           font-size: 20px;
         }
 
         .upload_button {
             background-color: #FEED06;
             color: black;
             padding: 15px;
-            font-size: 16px;
+            font-size: 24px;
             position: absolute;
-            top: 120px;
-            right: 530px;
+            top: 177px;
+            right: 450px;
             border: 0px;
             border-radius: 5px;
             cursor: pointer;
@@ -73,18 +66,18 @@
 
         .upload_hint {
             margin: 10px;
-            font-size: 14px;
+            font-size: 24px;
             position: relative;
-            top: 132px;
-            right: -70px;
+            top: 250px;
+            right: -550px;
             color: white;
         }
         .share_hint {
             margin: 10px;
-            font-size: 14px;
+            font-size: 24px;
             position: relative;
-            top: 115px;
-            left: 650px;
+            top: 195px;
+            right: -1350px;
             color: white;
         }
 
@@ -94,21 +87,22 @@
         }
 
         .result_title {
-            font-size: 18px;
+            font-size: 24px;
             font-weight: bold;
             position: relative;
-            top: 45px;
+            top: 175px;
             right: -70px;
         }
 
         .result_id {
             padding: 10px;
             margin: 2px;
-            font-size: 16px;
-            width: 1200px;
+            font-size: 24px;
+            color: white;
+            width: 800px;
             position: relative;
-            top: -140px;
-            right: -180px;
+            top: -50px;
+            right: -380px;
         }
 
         .result_id_number {
@@ -119,7 +113,7 @@
             background-color: #FEED06;
             color: black;
             font-weight: bold;
-            font-size: 18px;
+            font-size: 24px;
             border-radius: 5px;
 
         }
@@ -151,7 +145,7 @@
         <div class='result_id'>Bạn có khuôn mặt: <span class='result_id_number'>{{ face_shape }}</span></div>
         {% endif %}
         {% if user_image %}
-        <img style="max-width:160px; border-radius:1rem; position: relative; top:40px; left: -650px" src="{{ url_for('static', filename=user_image) }}?{{ rand }}"
+        <img style="max-width:160px; border-radius:1rem; position: relative; top:130px; left: -500px" src="{{ url_for('static', filename=user_image) }}?{{ rand }}"
              alt="User Image">
         {% endif %}
         {% if extra %}
