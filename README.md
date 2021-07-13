@@ -1,5 +1,17 @@
 # Đồ Án: Xem bói bằng AI
 
+## Nhóm: Nowwhere
+### Danh sách thành viên:
+|STT| Họ và tên         |MSSV       |
+|:-:|:------------------|:---------:|
+| 1	|	Nguyễn Thị Tú Anh | 030234180006 |
+| 2	| Lê Thị Hải Yến | 030234180159	|
+| 3	|	Trần Thùy Linh | 030234180070	|
+| 4 | Phạm Đình Tuấn | 030234180121 |
+| 5 | Lê Hoàng Huy | 030234180046 |
+
+---
+
 ## 1. Link data:
 > ### 1.1 [Face\_Shape\_Data](./Data/face_shape_data.zip)
 >
